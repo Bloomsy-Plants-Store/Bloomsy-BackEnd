@@ -25,8 +25,8 @@ var addToCart = async (req, res) => {
         await user.save();
       }      
     }
-
-    const cartItem = {
+    else {
+          const cartItem = {
       product_id: product_id,
       quantity: quantity,
       price:price
@@ -35,6 +35,8 @@ var addToCart = async (req, res) => {
     await user.save();
 
     return res.status(200).json({ message: 'Product added to cart successfully' });
+}
+
   } catch (error) {
     return res.status(500).json({ error: 'Server Error, Failed to add product to cart' });
   }
