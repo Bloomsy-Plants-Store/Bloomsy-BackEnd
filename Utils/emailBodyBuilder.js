@@ -17,7 +17,7 @@ const getEmailTemplate = (name, confirmationCode) => {
                                     <p style="font-size:15px; color:#455056; margin:8px 0 0; line-height:24px;">
                                         Your account has been created on the <br> <strong style="font-family: 'Dancing Script', cursive; font-style:italic; font-weight:bold"> Bloomsy Plants Shop </strong><br><strong>Please verify your account
                                             by click on the button below</strong>.</p> <br>
-                                    <a href="http://localhost:7400/api/auth/register/confirm/${confirmationCode}"
+                                    <a href="https://bloomsy.onrender.com/api/auth/register/confirm/${confirmationCode}"
                                     style="background:#628665;text-decoration:none !important; display:block; font-weight:500; margin-top:24px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">
                                     VERIFY ACCOUNT</a>
                                 </td>
@@ -27,7 +27,7 @@ const getEmailTemplate = (name, confirmationCode) => {
                 </tr>
                 <tr>
                     <td style="text-align:center;">
-                        <p style="font-size:14px; color:#628665; line-height:18px; margin-top:15px;">&copy; <a href="http://localhost:4200/" style="color:#628665;text-decoration:none !important;"><strong>www.Bloomsy.com</strong> </a></p>
+                        <p style="font-size:14px; color:#628665; line-height:18px; margin-top:15px;">&copy; <a href="https://bloomsy-168d4.web.app/" style="color:#628665;text-decoration:none !important;"><strong>www.Bloomsy.com</strong> </a></p>
                     </td>
                 </tr>
             </table>
@@ -53,7 +53,7 @@ const getResetPasswordEmailTemplate = (name) => {
                                     <img width="300" height="150" src="https://i.pinimg.com/originals/a4/0a/4a/a40a4ab242edf05c812f843acbbaa067.gif" title="plants animation" alt="plants animation"/>
                                     <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;">Hi <span style="font-family:'Dancing Script', cursive;">${name}</span></h1>
                                     <p style="font-size:15px; color:#455056; margin:8px 0 0; line-height:24px;">Please Click On Below Button to Reset Your Password</p>
-                                    <a href="http://localhost:4200/reset-password"
+                                    <a href="https://bloomsy-168d4.web.app/reset-password"
                                         style="background:#628665;text-decoration:none !important; display:block; font-weight:500; margin-top:24px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">
                                         RESET PASSWORD</a>
                                 </td>
@@ -63,7 +63,7 @@ const getResetPasswordEmailTemplate = (name) => {
                 </tr>
                 <tr>
                     <td style="text-align:center;">
-                        <p style="font-size:14px; color:#628665; line-height:18px; margin-top:15px;">&copy; <a href="http://localhost:4200/" style="color:#628665;text-decoration:none !important;"><strong>www.Bloomsy.com</strong> </a></p>
+                        <p style="font-size:14px; color:#628665; line-height:18px; margin-top:15px;">&copy; <a href="https://bloomsy-168d4.web.app/" style="color:#628665;text-decoration:none !important;"><strong>www.Bloomsy.com</strong> </a></p>
                     </td>
                 </tr>
             </table>
