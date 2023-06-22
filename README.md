@@ -60,7 +60,7 @@ We Hope That You are enjoying Watching Our Demo Video [🎥](https://www.youtube
     - cd BackEnd
     - npm install
   </pre>
-
+  
   Create File `config.json`
   <pre>
     {
@@ -90,6 +90,12 @@ We Hope That You are enjoying Watching Our Demo Video [🎥](https://www.youtube
   
       "STRIPE_SECRET_KEY":""
   }
+    
+  Create File `.env`
+  <pre>
+      OPENAI_API_KEY=""
+  </pre>
+  
   </pre>
   Run Back-End Server
   <pre>
