@@ -23,8 +23,7 @@ passport.use(new GoogleStrategy({
                     name: profile.displayName,
                     email: profile.emails[0].value,
                     password: randomPass,
-                    phone: profile.phone || "",
-                    status: "Active",
+                    phone: profile.phone || ""
                 });
                 await user.save();
             }

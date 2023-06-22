@@ -11,7 +11,7 @@ const countTotalOrders = async (req, res) => {
 
     if (result.length > 0) {
       return res.status(200).json({ message: result[0].totalOrders});
-      
+
     } else {
       return 0;
     }
@@ -31,11 +31,11 @@ const countTotalRevenue = async (req, res) => {
             _id: null,
             totalRevenue: { $sum: "$orders.total_price" }
           }
-        } 
+        }
       ];
-  
+
       const result = await User.aggregate(pipeline);
-  
+
       if (result.length > 0) {
         return res.status(200).json({ totalRevenue: result[0].totalRevenue });
       } else {
@@ -47,18 +47,17 @@ const countTotalRevenue = async (req, res) => {
     }
   };
 
-
 const getTotalUserCount = async (req, res) => {
-  try {
-    const totalUsers = await User.countDocuments();
-    res.status(200).json({users: totalUsers});
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    try {
+      const totalUsers = await User.countDocuments();
+      res.status(200).json({users: totalUsers});
+    } catch (error) {
+      console.error('Error:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+
   }
-    
-}
-  
+      
 module.exports = {
     countTotalOrders,
     countTotalRevenue,
