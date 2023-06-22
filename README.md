@@ -89,13 +89,11 @@ We Hope That You are enjoying Watching Our Demo Video [🎥](https://www.youtube
       "SECRET_KEY":"",
   
       "STRIPE_SECRET_KEY":""
-  }
-    
-  Create File `.env`
+  } 
+  </pre>
+   Create File `.env`
   <pre>
       OPENAI_API_KEY=""
-  </pre>
-  
   </pre>
   Run Back-End Server
   <pre>
